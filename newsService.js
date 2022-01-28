@@ -18,7 +18,7 @@ newsService.get('/',function(req,res){
     });
 });
 
-newsService.listen(3001, function () {
+newsService.listen(process.env.PORT || 3001, function () {
     return console.log("Started news service server listening on port 3001");
 });
 
